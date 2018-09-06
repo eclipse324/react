@@ -11,5 +11,8 @@
 #root .App ul li .poster_info .LinesEllipsis {font-size:18px; overflow:hidden; color:#666}
 
 @media screen and (min-width:320px) and (max-width:667px) {
-
-} 
+#root .App ul li {width:100%; margin:0 0 8% 0; padding:4%;}
+#root .App ul li .poster_img {float:none; display:block; width:100%; margin-bottom:20px;}
+#root .App ul li .poster_info {float:none; width:100%;}
+#root .App ul li .poster_info .title {margin-bottom:10px;}
+}

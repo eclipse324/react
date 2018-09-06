@@ -11,7 +11,8 @@ class Movie extends Component {
   }
   render(){
     return(
-      <li>        
+      <li>
+        <span className="rank">{this.props.rank}</span>   
         <span className="poster_img"><img src={this.props.poster} alt="영화 포스터" /> </span>
         <div className="poster_info">
           <span className="title">{this.props.title}</span>                 
