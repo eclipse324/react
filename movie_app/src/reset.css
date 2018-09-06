@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+/****************************************************************
+Last Updated : 2017-01-23
+Author       : amy
+Version      : 2.0
+****************************************************************/
+
+/* reset css */
+html, body, ul, ol, dl, li, dt, dd, form, fieldset, legend {margin:0; padding:0; outline:0; border:0; background:transparent;}
+h1, h2, h3, h4, h5, h6, p {margin:0; font-weight:normal;}
+fieldset, img {border:0; vertical-align:top;}
+table {border-collapse:collapse; border-spacing:0; table-layout:fixed;}
+caption, legend {visibility:hidden; width:1px; height:1px; margin:0; padding:0; background:none; font-size:0; text-indent:-9999em}
+input, textarea, select {font-size:100%; font-family:'맑은고딕', sans-serif; letter-spacing:-0.5px;}
+ul, ol, dl, li {list-style:none;}
+abbr, acronym {border-bottom: .1em dotted; cursor:help;}
+article, aside, details, figcaption, figure, footer, header, main, menu, nav, section {display:block;}
+a {color:inherit; text-decoration:none}
+button {outline:0; border:0; background:none;}
+
+/* common CSS */
+.text_hidden {overflow:hidden !important; clip:rect(1px, 1px, 1px, 1px) !important; position:absolute !important; width:1px !important; height:1px !important;}
+body {min-width:980px; font-family:'맑은고딕', sans-serif; font-size:13px; letter-spacing:-1.5px;}
+
+.ip_radio {position:relative; display:inline-block;}
+input[type="radio"] {position:absolute; top:0; left:0; z-index:1; width:16px; height:16px; margin:0;}
+input[type="radio"] + label {float:left; height:16px; line-height:13px; background:url('/images/bg_radio_off.png') no-repeat left center; cursor: pointer; padding-left:25px; margin-right:30px; position:relative; z-index:2;}
+input[type="radio"]:checked + label {background:url('/images/bg_radio_on.png') no-repeat left center;}
+
+.ip_checkbox {position:relative; display:inline-block;}
+input[type="checkbox"] {position:absolute; top:0; left:0; z-index:1; width:16px; height:16px; margin:0;}
+input[type="checkbox"] + label {float:left; height:16px; line-height:13px; background:url('/images/bg_checkbox_off.jpg') no-repeat left center; cursor: pointer; padding-left:25px; margin-right:30px; position:relative; z-index:2;}
+input[type="checkbox"]:checked + label {background:url('/images/bg_checkbox_on.jpg') no-repeat left center;}
+
+select {-webkit-appearance: none; -moz-appearance: none; appearance: none; background:url('/images/bg_select.png') no-repeat right 7px center;}
+select::-ms-expand { display:none;}
+
+/* Mobile Reset */
+* {-webkit-text-size-adjust:none}
+input[type="text"], input[type="password"], input[type="email"], input[type="search"], input[type="image"], input[type="tel"], input[type="number"], textarea {-webkit-appearance:none; -webkit-border-radius:0}
+select {-webkit-border-radius:0;}
+
+/****************************************************************
+모바일 
+****************************************************************/
+@media screen and (max-width:780px) {
+
+body {min-width:100%; font-family:'맑은고딕', sans-serif;}
+
+}

@@ -1,4 +1,15 @@
-.App {
+#root {width:100%; overflow:hidden; background:#eee}
+#root .App {width:100%; max-width:1200px; overflow:hidden; margin:50px auto; padding:0 4%; box-sizing:border-box;}
+#root .App h1 {text-align:center; margin-bottom:30px; font-weight:600;}
+#root .App ul {width:100%; overflow:hidden;}
+#root .App ul li {float:left; width:49%; overflow:hidden; margin:0 2% 2% 0; padding:2%; box-sizing:border-box; border:1px solid #cccccc}
+#root .App ul li:nth-child(2n) {margin-right:0;}
+#root .App ul li .poster_img {float:left; width:30%; margin-right:5%; box-sizing:border-box; border:1px solid #d1d1d1; box-shadow: 5px 5px 15px #ccc}
+#root .App ul li .poster_img img {width:100%}
+#root .App ul li .poster_info {float:left; width:65%;}
+#root .App ul li .poster_info .title {display:block; font-size:20px; font-weight:600; margin-bottom:20px;}
+#root .App ul li .poster_info .LinesEllipsis {font-size:18px; overflow:hidden; color:#666}
 
-}
+@media screen and (min-width:320px) and (max-width:667px) {
 
+} 

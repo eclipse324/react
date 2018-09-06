@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
-import './movie.css';
+import LinesEllipsis from 'react-lines-ellipsis'
+import './reset.css';
+import './App.css';
 
 class Movie extends Component {
   static propTypes = {
@@ -9,20 +11,22 @@ class Movie extends Component {
   }
   render(){
     return(
-      <div>
-        <MoviePoster poster={this.props.poster} />
-        <h1>{this.props.title}</h1>
-      </div>
+      <li>        
+        <span className="poster_img"><img src={this.props.poster} alt="영화 포스터" /> </span>
+        <div className="poster_info">
+          <span className="title">{this.props.title}</span>                 
+          <LinesEllipsis
+            text={this.props.summary}
+            maxLine='5'
+            ellipsis='...'
+            trimRight
+            basedOn='letters'
+          />
+        </div>
+      </li>
     )
   }
 }
 
-class MoviePoster extends Component {
-  render(){
-    return (
-      <img src={this.props.poster} alt="영화 포스터" /> 
-    )
-  }
-}
 
 export default Movie;
